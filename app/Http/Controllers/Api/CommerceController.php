@@ -38,7 +38,7 @@ class CommerceController extends Controller
         $validator = Validator::make($request->all(), [
             'nombre' => 'required|string|min:3',
             'slug' => 'required|string|unique:commerces',
-            // validar q no tenga espacios?
+            // validar que no tenga espacios?
             'descripcion' => 'string|max:190',
             // 'imagen' => 'required',
             'categoria' => 'required|exists:categories,id',
