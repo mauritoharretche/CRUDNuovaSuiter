@@ -19,3 +19,14 @@ Lo que falta:
 -   Soportar las imagenes para los comercios
 -   Agregar factories para los modelos
 -   Tests
+
+
+
+- Idea de como poder realizar el soporte de las imagenes para los comercios. (no pude llevarla a cabo).
+1. Crear imodelo para imagen y migracion
+2. correr migracion
+3. Relacionar el modelo Commerce con la imagen, Es igual a como se relaciona el commerce con la caegoria
+4. Hacer una nueva ruta POST /api/images para crear imagenes,
+5. Hacer un nuevo controller para implementar el store, que guarde la imagen en el disco, cree la entrada en la dbm retorne el id
+6. Modificar el store method del CommerceController para que soporte un campo imagen, el cual es el id de una imagen
+7. Modificar el show y list del commerce controller para que retorne la url de la imagen
